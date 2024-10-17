@@ -1,16 +1,23 @@
 html{
     width: 100%;
     height: auto;
-}
-body{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+body{
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px), 
+                linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: moveGrid 10s linear infinite;
+}
 a{
     text-decoration: none;
-    color: red;
+    color: Blue;
 }
 /*BUFFER SECTIONS */
 .buffer-section{
@@ -25,6 +32,7 @@ a{
     align-items: center;
     justify-content: center;
     gap: 50px;
+    font-size: 20px;
 }
     #top-left{
         width: 40%;
@@ -80,7 +88,8 @@ a{
             align-items: center;
             justify-content: center;
             gap: 20px;
-
+            cursor: pointer;
+            font-size: 20px;
         }
             .nav-buttons{
                 width: 25%;
@@ -103,6 +112,8 @@ a{
     align-items: center;
     justify-content: center;
     background-color:#edd7b9;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.212);
 }
     #first-section-container{
         width: 83%;
@@ -146,7 +157,9 @@ a{
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            border-radius: 9px;
             background-color: rgba(0, 0, 0, 0.226);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.212);
         }
             .review-headers{
                 width: 90%;
@@ -154,7 +167,6 @@ a{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                text-align: center;
                 font-size: 25px;
                 font-weight: bold;
                 margin-bottom: 20px;
@@ -165,8 +177,7 @@ a{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                text-align: center;
-                font-size: 20px;
+                font-size: 18px;
             }
             .rating-name{
                 width: 90%;
@@ -174,7 +185,6 @@ a{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                text-align: center;
                 font-size: 20px;
             }
 /* THIRD SECTION */
@@ -186,6 +196,8 @@ a{
         align-items: center;
         justify-content: center;
         background-color: #edd7b9;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.212);
 }
     #third-section-top{
         width: 83%;
@@ -220,6 +232,7 @@ a{
                 align-items: center;
                 justify-content: center;
                 border: 1px solid black;
+                border-radius: 5px;
             }
 /* Fourth Section */
 #fourth-section{
@@ -317,3 +330,12 @@ a{
                 flex-direction: column;
                 
             }
+
+            @keyframes moveGrid {
+                from {
+                  background-position: 0 0, 0 0;
+                }
+                to {
+                  background-position: 100px 100px, 100px 100px;
+                }
+              }
