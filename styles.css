@@ -66,13 +66,16 @@ a{
     }
         #logo{
             width: 50%;
-            height: 50%;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid black;
-
         }
+            #nav-logo{
+                width: 70%;
+                height: 100%;
+                
+            }
     #nav-right{
         width: 40%;
         height: 50%;
@@ -122,8 +125,11 @@ a{
         align-items: center;
         justify-content: center;
         font-size: 40px;
-        border: 1px solid black;
     }
+        #big-logo{
+            width: 50%;
+            height: 100%;
+        }
 /* second section */
 #second-section{
         width: 100%;
@@ -139,7 +145,8 @@ a{
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 30px;
+        font-size: 40px;
+        font-weight: bold;
     }
     #second-section-bottom{
         width: 83%;
@@ -205,7 +212,8 @@ a{
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 30px;
+        font-size: 40px;
+        font-weight: bold;
     }
     #third-section-bottom{
         width: 83%;
