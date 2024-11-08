@@ -310,7 +310,7 @@ a{
                 align-items: center;
                 justify-content: center;
             }
-                #phone-header{
+                #contact-header{
                     font-size: 25px;
                 }
             #phone-paragraph-container{
@@ -682,12 +682,287 @@ a{
                     border-radius: 5px;
                 }
 /* SERVICE PAGE BELOW */
-#sevice-page{
+#service-page{
     width: 100%;
     height: auto;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+    #services-section{
+        width: 100%;
+        height: 850px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:#edd7b9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.212);
+    }
+        #services-main-container{
+            width: 80%;
+            height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 3%;
+        }
+            .service-containers{
+                width: 30%;
+                height: 95%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+                .service-img-containers{
+                    width: 90%;
+                    height: 40%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                    #drywall-img{
+                        width: auto;
+                        height: 90%;
+                    }
+                    #carpentry-img{
+                        width: auto;
+                        height: 90%;
+                    }
+                    #hardwood{
+                        width: auto;
+                        height: 90%;
+                    }
+                .service-header-containers{
+                    width: 90%;
+                    height: 10%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                    #drywall-header{
+                        font-size: 25px;
+                    }
+                    #carpentry-header{
+                        font-size: 25px;
+                    }
+                    #hardwood-header{
+                        font-size: 25px;
+                    }
+                .service-paragraph-containers{
+                    width: 90%;
+                    height: 55%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                    #drywall-paragraph{
+                        font-size: 19px;
+                        text-align: center;
+                    }
+                    #carpentry-paragraph{
+                        font-size: 19px;
+                        text-align: center;
+                    }
+                    #hardwood-paragraph{
+                        font-size: 19px;
+                        text-align: center;
+                    }
+
+
+/* MOBILE RESPONSIVENESS */
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* General adjustments */
+    body {
+        background-size: 30px 30px;
+        font-size: 16px;
+    }
+
+    /* Top Bar */
+    #top-bar {
+        display: none;
+    }
+    #top-left, #top-right {
+        width: 50%;
+    }
+
+    /* Nav Bar */
+    #nav-bar {
+        height: auto;
+        flex-direction: row;
+        gap: 10px;
+    }
+    #nav-left, #nav-right {
+        width: 50%;
+        flex-direction: row;
+    }
+
+    .nav-buttons {
+        width: 50%;
+        font-size: 15px;
+    }
+
+    /* FIRST SECTION */
+    #first-section{
+        width: 100%;
+        height: auto;
+    }
+        #first-section-container{
+            width: 100%;
+            height: auto;
+        }
+            #big-logo{
+                width: 50%;
+                height: auto;
+            }
+
+    /* SECOND SECTION */
+    #second-section{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+        #second-section-top{
+            width: 100%;
+            height: auto;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        #second-section-bottom{
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+        }
+    
+    .review-box {
+        width: 90%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    /* Third Section */
+    #section-three{
+        width: 100%;
+        height: auto;
+    }
+    #section-three-container-one{
+        width: 100%;
+    }
+    #section-three-container-two{
+        display: none;
+    }
+    
+
+    /* Fourth Section */
+    .picture-containers {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .pictures {
+        width: 90%;
+    }
+
+    /* Fifth Section (FAQ) */
+    #fifth-section{
+        width: 100%;
+        height: auto;
+    }
+        #FAQ-content-box{
+            width: 100%;
+
+        }
+            #FAQ-content-left{
+                width: 50%;
+                height: 100%;
+            }
+            #FAQ-content-right{
+                width: 50%;
+                height: 100%;
+            }
+                .FAQ-boxes{
+                    width: 100%;
+                    height: 33.3%;
+                }
+
+    /* Bottom Section */
+    #bottom-section {
+        height: auto;
+        padding: 15px;
+    }
+    #top-bottom, #bottom-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #bottom-container-one, #bottom-container-two {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+    /* About Us Section */
+    #about-us-section{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    #about-us-top, #about-us-bottom {
+        flex-direction: column;
+        width: 100%;
+    }
+    .about-us-content {
+        width: 90%;
+        text-align: center;
+        font-size: 16px;
+    }
+    #about-us-img {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+
+
+
+
+
+
+
+
+    /* Services Section */
+    #services-section{
+        width: 100%;
+        height: auto;
+    }
+    #services-main-container {
+        flex-direction: column;
+    }
+    .service-containers {
+        width: 90%;
+    }
+    .service-imgs{
+        width: 25%;
+        height: 25%;
+        display: none;
+    }
+    .service-header-containers {
+        font-size: 22px;
+    }
+    .service-paragraph-containers {
+        font-size: 16px;
+        padding: 10px;
+    }
 }
